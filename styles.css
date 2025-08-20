@@ -1,0 +1,106 @@
+/* ======================
+   Base Styles
+   ====================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #4caf50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+/* Flexbox navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Grid layout for main section */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content,
+.sidebar {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Card Section (Flexbox) */
+.card-section {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background: #fff8e1;
+  border: 1px solid #ff9800;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ======================
+   Responsive Design
+   ====================== */
+
+/* Tablet view */
+@media (max-width: 900px) {
+  .grid-layout {
+    grid-template-columns: 1fr; /* Stack content and sidebar */
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}

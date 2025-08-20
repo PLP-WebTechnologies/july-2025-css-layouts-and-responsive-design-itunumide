@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CSS Layouts and Responsive Web Design Assignment"
+    />
+    <title>Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Responsive Web Page</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#cards">Services</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="grid-layout">
+      <!-- Main Content -->
+      <section id="intro" class="content">
+        <h2>Welcome</h2>
+        <p>
+          This webpage demonstrates <strong>CSS Grid</strong> and
+          <strong>Flexbox</strong>
+          with responsive design principles.
+        </p>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- Card Section -->
+    <section id="cards" class="card-section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Modern, responsive designs built with HTML5 and CSS3.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Clean, maintainable code with best practices.</p>
+        </div>
+        <div class="card">
+          <h3>SEO</h3>
+          <p>Optimized pages for speed, accessibility, and search engines.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Responsive Design Demo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
